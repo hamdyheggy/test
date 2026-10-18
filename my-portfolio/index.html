@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    const root = document.documentElement;
+
+    document.addEventListener("pointermove", (event) => {
+        root.style.setProperty("--mouse-x", event.clientX + "px");
+        root.style.setProperty("--mouse-y", event.clientY + "px");
+    });
+</script>
+
+<body>
+    <div class="interactive-background"></div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <a href="#home" class="logo">H<span>.</span></a>
+
+        <nav class="navigation">
+            <a href="#about" aria-label="About" title="About">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="#skills" aria-label="Skills" title="Skills">
+                <i class="fa-solid fa-layer-group"></i>
+            </a>
+
+            <a href="#projects" aria-label="Projects" title="Projects">
+                <i class="fa-solid fa-briefcase"></i>
+            </a>
+
+            <a href="#contact" aria-label="Contact" title="Contact">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </nav>
+
+        <a href="#contact" class="sidebar-bottom" aria-label="Contact me">
+            <i class="fa-solid fa-paper-plane"></i>
+        </a>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="dot"></span>
+                    AVAILABLE FOR WORK
+                </p>
+
+                <h1>
+                    Hello, I'm <span>Hamdy</span><br>
+                    Graphic Designer
+                </h1>
+
+                <p class="hero-description">
+                    I create visual identities and digital experiences
+                    that help brands stand out and tell their stories.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.behance.net/" target="_blank"
+                       rel="noopener noreferrer" aria-label="Behance">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank"
+                       rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank"
+                       rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img
+                        src="images/profile.png"
+                        alt="Portrait of the designer"
+                    >
+                </div>
+
+                <div class="floating-card">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <div>
+                        <strong>Creative Design</strong>
+                        <small>Ideas into visuals</small>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-down">
+                SCROLL TO EXPLORE <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="section-heading">
+                <span class="section-number">01 / ABOUT</span>
+                <h2>A little about <span>me.</span></h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a graphic designer passionate about creating
+                        meaningful visual experiences. I work on branding,
+                        social media designs, and visual identities.
+                    </p>
+
+                    <p>
+                        My goal is to combine creativity, strategy, and
+                        attention to detail to help every brand communicate
+                        its message clearly.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Let's work together
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>30+</h3>
+                        <p>Design Services</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Creative Mindset</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <span class="section-number">02 / SKILLS</span>
+                <h2>What I <span>do.</span></h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h3>Brand Identity</h3>
+                    <p>Logos, visual systems, colors and brand guidelines.</p>
+                </article>
+
+                <article class="skill-card">
+                    <i class="fa-solid fa-images"></i>
+                    <h3>Social Media Design</h3>
+                    <p>Creative posts and campaigns for digital platforms.</p>
+                </article>
+
+                <article class="skill-card">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>Photo Manipulation</h3>
+                    <p>Compositions, retouching and creative advertising visuals.</p>
+                </article>
+
+                <article class="skill-card">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h3>Mockups & Packaging</h3>
+                    <p>Presenting brands on realistic products and packaging.</p>
+                </article>
+            </div>
+
+            <div class="tools">
+                <span>MY TOOLS</span>
+                <p>Photoshop</p>
+                <p>Illustrator</p>
+                <p>Figma</p>
+                <p>InDesign</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <span class="section-number">03 / PORTFOLIO</span>
+                <h2>Selected <span>projects.</span></h2>
+                <p>A selection of my creative work and design concepts.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <a href="images/project-1.jpg"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-image">
+                        <img src="images/pro1.jpg"
+                             alt="Jewelry brand identity project"
+                             loading="lazy"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85';">
+                        <span class="project-open">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a>
+
+                    <div class="project-info">
+                        <span>SOCIAL MEDIA</span>
+                        <h3>Bazooka</h3>
+                        <p>Luxury visual identity concept</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a href="images/project-2.jpg"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-image">
+                        <img src="images/pro2.jpg"
+                             alt="Coffee shop branding project"
+                             loading="lazy"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=85';">
+                        <span class="project-open">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a>
+
+                    <div class="project-info">
+                        <span>THUMBNAIL</span>
+                        <h3>The Unknown Palace</h3>
+                        <p>Video Thumbnail youtube</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a href="images/project-3.jpg"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-image">
+                        <img src="images/pro3.jpg"
+                             alt="Creative advertising design"
+                             loading="lazy"
+                             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85';">
+                        <span class="project-open">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </a>
+
+                    <div class="project-info">
+                        <span>BRANDING</span>
+                        <h3>Eco wave</h3>
+                        <p>A modern cafe branding concept</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="section-heading">
+                <span class="section-number">04 / CONTACT</span>
+                <h2>Have a project in <span>mind?</span></h2>
+                <p>Let's create something amazing together.</p>
+            </div>
+
+            <a href="mailto:hamdyheggy00@gmail.com"
+               class="contact-link">
+                hamdyheggy0@gmail.com
+                <small>01021425725</small>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <div class="contact-socials">
+                <a href="https://www.behance.net/"
+                   target="_blank" rel="noopener noreferrer">Behance</a>
+                <a href="https://www.instagram.com/"
+                   target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.linkedin.com/"
+                   target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Hamdy. Designed with creativity.</p>
+            <a href="#home">Back to top ↑</a>
+        </footer>
+
+    </main>
+
+</body>
+</html>
